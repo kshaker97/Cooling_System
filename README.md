@@ -1,4 +1,4 @@
-# On_Demand_Traffic_Light_Control_System
+# Cooling System
 
 ## Description
 Cooling system uses LM35 sensor to measure room temperature. Temperature is displayed on the first line of 16x2 LCD Display and on two digits seven segments. If the temperature exceeds 35 C. A Led lights on, buzzer sounds on and a Dc motor fan operates to lower room temperature below 35 C. Dc motor duty cycle is displayed on the second line of 16x2 LCD Display.
