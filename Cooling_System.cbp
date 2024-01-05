@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Cooling_System" />
+		<Option pch_mode="2" />
+		<Option compiler="avr-gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/Cooling_System.elf" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="5" />
+				<Option compiler="avr-gcc" />
+				<Compiler>
+					<Add option="-Os" />
+				</Compiler>
+			</Target>
+			<Environment>
+				<Variable name="MCU" value="atmega8" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-mmcu=atmega8" />
+			<Add option="-DF_CPU=16000000UL" />
+		</Compiler>
+		<Linker>
+			<Add option="-mmcu=atmega8" />
+			<Add option="-Wl,-Map=$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).map,--cref" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="avr-objdump -h -S $(TARGET_OUTPUT_FILE) &gt; $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).lss" />
+			<Add after="avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).hex" />
+			<Add after="avr-objcopy --no-change-warnings -j .eeprom --change-section-lma .eeprom=0 -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).eep" />
+			<Add after="avr-objcopy --no-change-warnings -j .lock --change-section-lma .lock=0 -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).lock" />
+			<Add after="avr-objcopy --no-change-warnings -j .signature --change-section-lma .signature=0 -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).sig" />
+			<Add after="avr-objcopy --no-change-warnings -j .fuse --change-section-lma .fuse=0 -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).fuse" />
+		</ExtraCommands>
+		<Unit filename="APP/APP_config.h" />
+		<Unit filename="APP/APP_interface.h" />
+		<Unit filename="APP/APP_private.h" />
+		<Unit filename="APP/APP_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ECUAL/BUTTON/BUTTON_config.h" />
+		<Unit filename="ECUAL/BUTTON/BUTTON_interface.h" />
+		<Unit filename="ECUAL/BUTTON/BUTTON_private.h" />
+		<Unit filename="ECUAL/BUTTON/BUTTON_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ECUAL/BUZZER/BUZZER_config.h" />
+		<Unit filename="ECUAL/BUZZER/BUZZER_interface.h" />
+		<Unit filename="ECUAL/BUZZER/BUZZER_private.h" />
+		<Unit filename="ECUAL/BUZZER/BUZZER_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ECUAL/DCMOTOR/DCMOTOR_config.h" />
+		<Unit filename="ECUAL/DCMOTOR/DCMOTOR_interface.h" />
+		<Unit filename="ECUAL/DCMOTOR/DCMOTOR_private.h" />
+		<Unit filename="ECUAL/DCMOTOR/DCMOTOR_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ECUAL/LCD/LCD_config.h" />
+		<Unit filename="ECUAL/LCD/LCD_interface.h" />
+		<Unit filename="ECUAL/LCD/LCD_private.h" />
+		<Unit filename="ECUAL/LCD/LCD_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ECUAL/LED/LED_config.h" />
+		<Unit filename="ECUAL/LED/LED_interface.h" />
+		<Unit filename="ECUAL/LED/LED_private.h" />
+		<Unit filename="ECUAL/LED/LED_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ECUAL/SEVENSEGMENT/SEVENSEGMENT_config.h" />
+		<Unit filename="ECUAL/SEVENSEGMENT/SEVENSEGMENT_interface.h" />
+		<Unit filename="ECUAL/SEVENSEGMENT/SEVENSEGMENT_private.h" />
+		<Unit filename="ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MCAL/ADC/ADC_config.h" />
+		<Unit filename="MCAL/ADC/ADC_interface.h" />
+		<Unit filename="MCAL/ADC/ADC_private.h" />
+		<Unit filename="MCAL/ADC/ADC_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MCAL/DIO/DIO_config.h" />
+		<Unit filename="MCAL/DIO/DIO_interface.h" />
+		<Unit filename="MCAL/DIO/DIO_private.h" />
+		<Unit filename="MCAL/DIO/DIO_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MCAL/INTERRUPT/INTERRUPT_config.h" />
+		<Unit filename="MCAL/INTERRUPT/INTERRUPT_interface.h" />
+		<Unit filename="MCAL/INTERRUPT/INTERRUPT_private.h" />
+		<Unit filename="MCAL/INTERRUPT/INTERRUPT_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MCAL/TIMER0/TIMER0_config.h" />
+		<Unit filename="MCAL/TIMER0/TIMER0_interface.h" />
+		<Unit filename="MCAL/TIMER0/TIMER0_private.h" />
+		<Unit filename="MCAL/TIMER0/TIMER0_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MCAL/TIMER1/TIMER1_config.h" />
+		<Unit filename="MCAL/TIMER1/TIMER1_interface.h" />
+		<Unit filename="MCAL/TIMER1/TIMER1_private.h" />
+		<Unit filename="MCAL/TIMER1/TIMER1_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="UTILITIES/BIT_MATH.h" />
+		<Unit filename="UTILITIES/STD_TYPES.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

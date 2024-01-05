@@ -1,0 +1,927 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+                              obj/Release/APP/APP_program.o (__udivmodhi4)
+/usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o (exit)
+/usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+                              obj/Release/APP/APP_program.o (__do_copy_data)
+/usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+                              obj/Release/APP/APP_program.o (__do_clear_bss)
+/usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+                              obj/Release/MCAL/TIMER0/TIMER0_program.o (__adddi3_s8)
+/usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+                              obj/Release/MCAL/TIMER0/TIMER0_program.o (__cmpdi2)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3.o)
+                              obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o (__divsf3)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3.o) (__divsf3x)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixsfdi.o)
+                              obj/Release/MCAL/TIMER0/TIMER0_program.o (__fixunssfdi)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixunssfsi.o)
+                              obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o (__fixunssfsi)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(floatsisf.o)
+                              obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o (__floatunsisf)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_inf.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o) (__fp_inf)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_nan.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o) (__fp_nan)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_negdi.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixsfdi.o) (__fp_negdi)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscA.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o) (__fp_pscA)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscB.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o) (__fp_pscB)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_round.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3.o) (__fp_round)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_split3.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o) (__fp_split3)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_zero.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixunssfsi.o) (__fp_zero)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3.o)
+                              obj/Release/MCAL/TIMER1/TIMER1_program.o (__mulsf3)
+/usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+                              /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3.o) (__mulsf3x)
+
+Allocating common symbols
+Common symbol       size              file
+
+Temperature         0x2               obj/Release/APP/APP_program.o
+DutyCycle           0x1               obj/Release/APP/APP_program.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000002000 xr
+data             0x0000000000800060 0x0000000000000400 rw !x
+eeprom           0x0000000000810000 0x0000000000000200 rw !x
+fuse             0x0000000000820000 0x0000000000000002 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+LOAD obj/Release/APP/APP_program.o
+LOAD obj/Release/ECUAL/BUTTON/BUTTON_program.o
+LOAD obj/Release/ECUAL/BUZZER/BUZZER_program.o
+LOAD obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+LOAD obj/Release/ECUAL/LCD/LCD_program.o
+LOAD obj/Release/ECUAL/LED/LED_program.o
+LOAD obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+LOAD obj/Release/main.o
+LOAD obj/Release/MCAL/ADC/ADC_program.o
+LOAD obj/Release/MCAL/DIO/DIO_program.o
+LOAD obj/Release/MCAL/INTERRUPT/INTERRUPT_program.o
+LOAD obj/Release/MCAL/TIMER0/TIMER0_program.o
+LOAD obj/Release/MCAL/TIMER1/TIMER1_program.o
+START GROUP
+LOAD /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a
+LOAD /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a
+LOAD /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libc.a
+LOAD /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libatmega8.a
+END GROUP
+                0x0000000000000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x0000000000800060]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x0000000000002000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x2000
+                [0x0000000000000400]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000200]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000002]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0xe62
+ *(.vectors)
+ .vectors       0x0000000000000000       0x26 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000000000000026                . = ALIGN (0x2)
+                0x0000000000000026                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000026        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000026                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x0000000000000026                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000026                __ctors_start = .
+ *(.ctors)
+                0x0000000000000026                __ctors_end = .
+                0x0000000000000026                __dtors_start = .
+ *(.dtors)
+                0x0000000000000026                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000026        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+                0x0000000000000026                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000026        0xc /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000032       0x16 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+                0x0000000000000032                __do_copy_data
+ .init4         0x0000000000000048       0x10 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+                0x0000000000000048                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000058        0x4 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+ *(.init9)
+ *(.text)
+ .text          0x000000000000005c        0x2 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+                0x000000000000005c                __vector_1
+                0x000000000000005c                __vector_12
+                0x000000000000005c                __bad_interrupt
+                0x000000000000005c                __vector_6
+                0x000000000000005c                __vector_3
+                0x000000000000005c                __vector_11
+                0x000000000000005c                __vector_13
+                0x000000000000005c                __vector_17
+                0x000000000000005c                __vector_7
+                0x000000000000005c                __vector_5
+                0x000000000000005c                __vector_4
+                0x000000000000005c                __vector_2
+                0x000000000000005c                __vector_15
+                0x000000000000005c                __vector_8
+                0x000000000000005c                __vector_14
+                0x000000000000005c                __vector_10
+                0x000000000000005c                __vector_16
+                0x000000000000005c                __vector_18
+ .text          0x000000000000005e      0x1ac obj/Release/APP/APP_program.o
+                0x000000000000005e                APP_voidInit
+                0x000000000000008e                APP_voidStart
+                0x0000000000000152                __vector_9
+ .text          0x000000000000020a       0x2a obj/Release/ECUAL/BUTTON/BUTTON_program.o
+                0x000000000000020a                BUTTON_voidButtonInit
+                0x0000000000000232                BUTTON_u8GetButtonState
+ .text          0x0000000000000234        0xc obj/Release/ECUAL/BUZZER/BUZZER_program.o
+                0x0000000000000234                BUZZER_voidBuzzerInit
+                0x0000000000000238                BUZZER_voidBuzzerOn
+                0x000000000000023c                BUZZER_voidBuzzerOff
+ .text          0x0000000000000240       0x58 obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+                0x0000000000000240                DCMOTOR_voidDcMotorInit
+                0x0000000000000252                DCMOTOR_voidSetDcMotorDutyCycle
+                0x0000000000000268                DCMOTOR_u8GetDcMotorDutyCycle
+ .text          0x0000000000000298      0x2a0 obj/Release/ECUAL/LCD/LCD_program.o
+                0x0000000000000298                LCD_voidLcdSendCommand
+                0x0000000000000352                LCD_voidLcdInit
+                0x00000000000003d2                LCD_voidLcdSendData
+                0x000000000000048c                LCD_voidLcdSendString
+                0x00000000000004c8                LCD_voidLcdSendNumber
+ .text          0x0000000000000538        0xe obj/Release/ECUAL/LED/LED_program.o
+                0x0000000000000538                LED_voidLedInit
+                0x000000000000053c                LED_voidTurnLedOn
+                0x0000000000000540                LED_voidTurnLedOff
+                0x0000000000000544                LED_voidToggleLed
+ .text          0x0000000000000546       0x24 obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+                0x0000000000000546                SEVENSEGMENT_voidSevenSegmentInit
+                0x0000000000000560                SEVENSEGMENT_voidSevenSegmentOn
+                0x0000000000000564                SEVENSEGMENT_voidSevenSegmentOff
+                0x0000000000000568                SEVENSEGMENT_voidSevenSegmentDisplay
+ .text          0x000000000000056a        0x0 obj/Release/main.o
+ .text          0x000000000000056a       0x38 obj/Release/MCAL/ADC/ADC_program.o
+                0x000000000000056a                ADC_voidChannelInit
+                0x000000000000058e                ADC_u16ChannelRead
+ .text          0x00000000000005a2      0x216 obj/Release/MCAL/DIO/DIO_program.o
+                0x00000000000005a2                DIO_voidSetPortDirection
+                0x00000000000005ba                DIO_voidSetPortValue
+                0x00000000000005d2                DIO_voidTogglePortValue
+                0x00000000000005f6                DIO_u8GetPortValue
+                0x0000000000000612                DIO_voidSetPinDirection
+                0x00000000000006ac                DIO_voidSetPinValue
+                0x0000000000000746                DIO_voidTogglePinValue
+                0x000000000000078e                DIO_u8GetPinValue
+ .text          0x00000000000007b8       0x38 obj/Release/MCAL/INTERRUPT/INTERRUPT_program.o
+                0x00000000000007b8                INTERRUPT_voidGlobalInterruptEnable
+                0x00000000000007c0                INTERRUPT_voidExternalInterrupt0Enable
+                0x00000000000007d8                INTERRUPT_voidExternalInterrupt1Enable
+ .text          0x00000000000007f0      0x1fc obj/Release/MCAL/TIMER0/TIMER0_program.o
+                0x00000000000007f0                TIMER0_voidTimerInit
+                0x00000000000007f4                TIMER0_voidTimerInterruptEnable
+                0x0000000000000808                TIMER0_voidDelayMilliSeconds
+                0x00000000000008fa                TIMER0_voidDelayMicroSeconds
+ .text          0x00000000000009ec       0x7c obj/Release/MCAL/TIMER1/TIMER1_program.o
+                0x00000000000009ec                TIMER1_voidPwmInit
+                0x0000000000000a2a                TIMER1_voidSetDutyCycle
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixsfdi.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixunssfsi.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(floatsisf.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_inf.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_nan.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_negdi.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscA.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscB.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_round.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_split3.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_zero.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3.o)
+ .text          0x0000000000000a68        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+                0x0000000000000a68                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x0000000000000a68        0x6 obj/Release/main.o
+                0x0000000000000a68                main
+ .text.libgcc.mul
+                0x0000000000000a6e        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x0000000000000a6e       0x28 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+                0x0000000000000a6e                __udivmodhi4
+ .text.libgcc   0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.div
+                0x0000000000000a96        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+ .text.libgcc   0x0000000000000a96       0x18 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+                0x0000000000000a96                __adddi3_s8
+ .text.libgcc.prologue
+                0x0000000000000aae        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.builtins
+                0x0000000000000aae        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fmul
+                0x0000000000000aae        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fixed
+                0x0000000000000aae        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.mul
+                0x0000000000000aae        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+ .text.libgcc.div
+                0x0000000000000aae        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+ .text.libgcc   0x0000000000000aae       0x12 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+                0x0000000000000aae                __cmpdi2
+ .text.libgcc.prologue
+                0x0000000000000ac0        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+ .text.libgcc.builtins
+                0x0000000000000ac0        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+ .text.libgcc.fmul
+                0x0000000000000ac0        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+ .text.libgcc.fixed
+                0x0000000000000ac0        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+ .text.avr-libc.fplib
+                0x0000000000000ac0        0x4 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3.o)
+                0x0000000000000ac0                __divsf3
+ .text.avr-libc.fplib
+                0x0000000000000ac4       0xcc /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+                0x0000000000000ada                __divsf3x
+                0x0000000000000ade                __divsf3_pse
+ .text.avr-libc.fplib
+                0x0000000000000b90       0x74 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixsfdi.o)
+                0x0000000000000b90                __fixsfdi
+                0x0000000000000b9a                __fixunssfdi
+ .text.avr-libc.fplib
+                0x0000000000000c04       0x58 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixunssfsi.o)
+                0x0000000000000c04                __fixunssfsi
+ .text.avr-libc.fplib
+                0x0000000000000c5c       0x7a /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(floatsisf.o)
+                0x0000000000000c5c                __floatunsisf
+                0x0000000000000c60                __floatsisf
+ .text.avr-libc.fplib
+                0x0000000000000cd6        0xc /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_inf.o)
+                0x0000000000000cd6                __fp_inf
+ .text.avr-libc.fplib
+                0x0000000000000ce2        0x6 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_nan.o)
+                0x0000000000000ce2                __fp_nan
+ .text.avr-libc.fplib
+                0x0000000000000ce8       0x20 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_negdi.o)
+                0x0000000000000ce8                __fp_negdi
+ .text.avr-libc.fplib
+                0x0000000000000d08        0xe /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscA.o)
+                0x0000000000000d08                __fp_pscA
+ .text.avr-libc.fplib
+                0x0000000000000d16        0xe /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscB.o)
+                0x0000000000000d16                __fp_pscB
+ .text.avr-libc.fplib
+                0x0000000000000d24       0x22 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_round.o)
+                0x0000000000000d24                __fp_round
+ .text.avr-libc.fplib
+                0x0000000000000d46       0x44 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_split3.o)
+                0x0000000000000d46                __fp_split3
+                0x0000000000000d56                __fp_splitA
+ .text.avr-libc.fplib
+                0x0000000000000d8a        0xe /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_zero.o)
+                0x0000000000000d8a                __fp_zero
+                0x0000000000000d8c                __fp_szero
+ .text.avr-libc.fplib
+                0x0000000000000d98        0x4 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3.o)
+                0x0000000000000d98                __mulsf3
+ .text.avr-libc.fplib
+                0x0000000000000d9c       0xc2 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+                0x0000000000000db0                __mulsf3x
+                0x0000000000000db4                __mulsf3_pse
+                0x0000000000000e5e                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000000e5e        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+                0x0000000000000e5e                exit
+                0x0000000000000e5e                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000000e5e        0x4 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000e62                _etext = .
+
+.data           0x0000000000800060       0x26 load address 0x0000000000000e62
+                0x0000000000800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+ .data          0x0000000000800060        0x0 obj/Release/APP/APP_program.o
+ .data          0x0000000000800060        0x0 obj/Release/ECUAL/BUTTON/BUTTON_program.o
+ .data          0x0000000000800060        0x0 obj/Release/ECUAL/BUZZER/BUZZER_program.o
+ .data          0x0000000000800060        0x0 obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+ .data          0x0000000000800060        0x0 obj/Release/ECUAL/LCD/LCD_program.o
+ .data          0x0000000000800060        0x0 obj/Release/ECUAL/LED/LED_program.o
+ .data          0x0000000000800060        0xa obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+                0x0000000000800060                SEVENSEGMENT_DATA
+ .data          0x000000000080006a        0x0 obj/Release/main.o
+ .data          0x000000000080006a        0x0 obj/Release/MCAL/ADC/ADC_program.o
+ .data          0x000000000080006a        0x0 obj/Release/MCAL/DIO/DIO_program.o
+ .data          0x000000000080006a        0x0 obj/Release/MCAL/INTERRUPT/INTERRUPT_program.o
+ .data          0x000000000080006a        0x0 obj/Release/MCAL/TIMER0/TIMER0_program.o
+ .data          0x000000000080006a        0x0 obj/Release/MCAL/TIMER1/TIMER1_program.o
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixsfdi.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixunssfsi.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(floatsisf.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_inf.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_nan.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_negdi.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscA.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscB.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_round.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_split3.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_zero.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3.o)
+ .data          0x000000000080006a        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x000000000080006a       0x1b obj/Release/APP/APP_program.o
+ *(.gnu.linkonce.r*)
+                0x0000000000800086                . = ALIGN (0x2)
+ *fill*         0x0000000000800085        0x1 
+                0x0000000000800086                _edata = .
+                0x0000000000800086                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800086        0x5
+                0x0000000000800086                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0000000000800086        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+ .bss           0x0000000000800086        0x2 obj/Release/APP/APP_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/ECUAL/BUTTON/BUTTON_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/ECUAL/BUZZER/BUZZER_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/ECUAL/LCD/LCD_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/ECUAL/LED/LED_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/main.o
+ .bss           0x0000000000800088        0x0 obj/Release/MCAL/ADC/ADC_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/MCAL/DIO/DIO_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/MCAL/INTERRUPT/INTERRUPT_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/MCAL/TIMER0/TIMER0_program.o
+ .bss           0x0000000000800088        0x0 obj/Release/MCAL/TIMER1/TIMER1_program.o
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixsfdi.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixunssfsi.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(floatsisf.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_inf.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_nan.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_negdi.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscA.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscB.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_round.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_split3.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_zero.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3.o)
+ .bss           0x0000000000800088        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000000800088        0x3 obj/Release/APP/APP_program.o
+                0x0000000000800088                Temperature
+                0x000000000080008a                DutyCycle
+                0x000000000080008b                PROVIDE (__bss_end, .)
+                0x0000000000000e62                __data_load_start = LOADADDR (.data)
+                0x0000000000000e88                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x000000000080008b        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x000000000080008b                _end = .
+                [!provide]                        PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 obj/Release/APP/APP_program.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0x12 obj/Release/ECUAL/BUTTON/BUTTON_program.o
+ .comment       0x0000000000000011       0x12 obj/Release/ECUAL/BUZZER/BUZZER_program.o
+ .comment       0x0000000000000011       0x12 obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+ .comment       0x0000000000000011       0x12 obj/Release/ECUAL/LCD/LCD_program.o
+ .comment       0x0000000000000011       0x12 obj/Release/ECUAL/LED/LED_program.o
+ .comment       0x0000000000000011       0x12 obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+ .comment       0x0000000000000011       0x12 obj/Release/main.o
+ .comment       0x0000000000000011       0x12 obj/Release/MCAL/ADC/ADC_program.o
+ .comment       0x0000000000000011       0x12 obj/Release/MCAL/DIO/DIO_program.o
+ .comment       0x0000000000000011       0x12 obj/Release/MCAL/INTERRUPT/INTERRUPT_program.o
+ .comment       0x0000000000000011       0x12 obj/Release/MCAL/TIMER0/TIMER0_program.o
+ .comment       0x0000000000000011       0x12 obj/Release/MCAL/TIMER1/TIMER1_program.o
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x48c
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x48c /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+
+.debug_abbrev   0x0000000000000000      0x44e
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x44e /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+
+.debug_line     0x0000000000000000       0x1a
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x1a /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000      0x17a
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x17a /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(bin/Release/Cooling_System.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_u16ChannelRead                                obj/Release/MCAL/ADC/ADC_program.o
+                                                  obj/Release/APP/APP_program.o
+ADC_voidChannelInit                               obj/Release/MCAL/ADC/ADC_program.o
+                                                  obj/Release/APP/APP_program.o
+APP_voidInit                                      obj/Release/APP/APP_program.o
+                                                  obj/Release/main.o
+APP_voidStart                                     obj/Release/APP/APP_program.o
+                                                  obj/Release/main.o
+BUTTON_u8GetButtonState                           obj/Release/ECUAL/BUTTON/BUTTON_program.o
+BUTTON_voidButtonInit                             obj/Release/ECUAL/BUTTON/BUTTON_program.o
+BUZZER_voidBuzzerInit                             obj/Release/ECUAL/BUZZER/BUZZER_program.o
+                                                  obj/Release/APP/APP_program.o
+BUZZER_voidBuzzerOff                              obj/Release/ECUAL/BUZZER/BUZZER_program.o
+                                                  obj/Release/APP/APP_program.o
+BUZZER_voidBuzzerOn                               obj/Release/ECUAL/BUZZER/BUZZER_program.o
+                                                  obj/Release/APP/APP_program.o
+DCMOTOR_u8GetDcMotorDutyCycle                     obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+                                                  obj/Release/APP/APP_program.o
+DCMOTOR_voidDcMotorInit                           obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+                                                  obj/Release/APP/APP_program.o
+DCMOTOR_voidSetDcMotorDutyCycle                   obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+                                                  obj/Release/APP/APP_program.o
+DIO_u8GetPinValue                                 obj/Release/MCAL/DIO/DIO_program.o
+                                                  obj/Release/ECUAL/BUTTON/BUTTON_program.o
+DIO_u8GetPortValue                                obj/Release/MCAL/DIO/DIO_program.o
+DIO_voidSetPinDirection                           obj/Release/MCAL/DIO/DIO_program.o
+                                                  obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+                                                  obj/Release/ECUAL/LED/LED_program.o
+                                                  obj/Release/ECUAL/LCD/LCD_program.o
+                                                  obj/Release/ECUAL/BUZZER/BUZZER_program.o
+                                                  obj/Release/ECUAL/BUTTON/BUTTON_program.o
+DIO_voidSetPinValue                               obj/Release/MCAL/DIO/DIO_program.o
+                                                  obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+                                                  obj/Release/ECUAL/LED/LED_program.o
+                                                  obj/Release/ECUAL/LCD/LCD_program.o
+                                                  obj/Release/ECUAL/BUZZER/BUZZER_program.o
+DIO_voidSetPortDirection                          obj/Release/MCAL/DIO/DIO_program.o
+                                                  obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+DIO_voidSetPortValue                              obj/Release/MCAL/DIO/DIO_program.o
+                                                  obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+DIO_voidTogglePinValue                            obj/Release/MCAL/DIO/DIO_program.o
+                                                  obj/Release/ECUAL/LED/LED_program.o
+DIO_voidTogglePortValue                           obj/Release/MCAL/DIO/DIO_program.o
+DutyCycle                                         obj/Release/APP/APP_program.o
+INTERRUPT_voidExternalInterrupt0Enable            obj/Release/MCAL/INTERRUPT/INTERRUPT_program.o
+INTERRUPT_voidExternalInterrupt1Enable            obj/Release/MCAL/INTERRUPT/INTERRUPT_program.o
+INTERRUPT_voidGlobalInterruptEnable               obj/Release/MCAL/INTERRUPT/INTERRUPT_program.o
+                                                  obj/Release/APP/APP_program.o
+LCD_voidLcdInit                                   obj/Release/ECUAL/LCD/LCD_program.o
+                                                  obj/Release/APP/APP_program.o
+LCD_voidLcdSendCommand                            obj/Release/ECUAL/LCD/LCD_program.o
+                                                  obj/Release/APP/APP_program.o
+LCD_voidLcdSendData                               obj/Release/ECUAL/LCD/LCD_program.o
+LCD_voidLcdSendNumber                             obj/Release/ECUAL/LCD/LCD_program.o
+                                                  obj/Release/APP/APP_program.o
+LCD_voidLcdSendString                             obj/Release/ECUAL/LCD/LCD_program.o
+                                                  obj/Release/APP/APP_program.o
+LED_voidLedInit                                   obj/Release/ECUAL/LED/LED_program.o
+                                                  obj/Release/APP/APP_program.o
+LED_voidToggleLed                                 obj/Release/ECUAL/LED/LED_program.o
+LED_voidTurnLedOff                                obj/Release/ECUAL/LED/LED_program.o
+                                                  obj/Release/APP/APP_program.o
+LED_voidTurnLedOn                                 obj/Release/ECUAL/LED/LED_program.o
+                                                  obj/Release/APP/APP_program.o
+SEVENSEGMENT_DATA                                 obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+                                                  obj/Release/APP/APP_program.o
+SEVENSEGMENT_voidSevenSegmentDisplay              obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+                                                  obj/Release/APP/APP_program.o
+SEVENSEGMENT_voidSevenSegmentInit                 obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+                                                  obj/Release/APP/APP_program.o
+SEVENSEGMENT_voidSevenSegmentOff                  obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+                                                  obj/Release/APP/APP_program.o
+SEVENSEGMENT_voidSevenSegmentOn                   obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+                                                  obj/Release/APP/APP_program.o
+TIMER0_voidDelayMicroSeconds                      obj/Release/MCAL/TIMER0/TIMER0_program.o
+                                                  obj/Release/ECUAL/LCD/LCD_program.o
+TIMER0_voidDelayMilliSeconds                      obj/Release/MCAL/TIMER0/TIMER0_program.o
+                                                  obj/Release/ECUAL/LCD/LCD_program.o
+                                                  obj/Release/APP/APP_program.o
+TIMER0_voidTimerInit                              obj/Release/MCAL/TIMER0/TIMER0_program.o
+                                                  obj/Release/APP/APP_program.o
+TIMER0_voidTimerInterruptEnable                   obj/Release/MCAL/TIMER0/TIMER0_program.o
+                                                  obj/Release/APP/APP_program.o
+TIMER1_voidPwmInit                                obj/Release/MCAL/TIMER1/TIMER1_program.o
+                                                  obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+TIMER1_voidSetDutyCycle                           obj/Release/MCAL/TIMER1/TIMER1_program.o
+                                                  obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+Temperature                                       obj/Release/APP/APP_program.o
+__DATA_REGION_LENGTH__                            /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__DATA_REGION_ORIGIN__                            /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__EEPROM_REGION_LENGTH__                          /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__FUSE_REGION_LENGTH__                            /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__TEXT_REGION_LENGTH__                            /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__adddi3_s8                                       /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_adddi3_s8.o)
+                                                  obj/Release/MCAL/TIMER0/TIMER0_program.o
+__bad_interrupt                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__bss_end                                         /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+__cmpdi2                                          /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_cmpdi2.o)
+                                                  obj/Release/MCAL/TIMER0/TIMER0_program.o
+__data_end                                        /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+__divsf3                                          /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3.o)
+                                                  obj/Release/MCAL/TIMER0/TIMER0_program.o
+                                                  obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+__divsf3_pse                                      /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+__divsf3x                                         /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3.o)
+__do_clear_bss                                    /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_clear_bss.o)
+                                                  obj/Release/APP/APP_program.o
+__do_copy_data                                    /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_copy_data.o)
+                                                  obj/Release/ECUAL/SEVENSEGMENT/SEVENSEGMENT_program.o
+                                                  obj/Release/APP/APP_program.o
+__fixsfdi                                         /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixsfdi.o)
+__fixunssfdi                                      /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixsfdi.o)
+                                                  obj/Release/MCAL/TIMER0/TIMER0_program.o
+__fixunssfsi                                      /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixunssfsi.o)
+                                                  obj/Release/MCAL/TIMER1/TIMER1_program.o
+                                                  obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+__floatsisf                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(floatsisf.o)
+                                                  obj/Release/MCAL/TIMER1/TIMER1_program.o
+__floatunsisf                                     /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(floatsisf.o)
+                                                  obj/Release/ECUAL/DCMOTOR/DCMOTOR_program.o
+__fp_inf                                          /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_inf.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+__fp_nan                                          /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_nan.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+__fp_negdi                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_negdi.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixsfdi.o)
+__fp_pscA                                         /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscA.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+__fp_pscB                                         /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_pscB.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+__fp_round                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_round.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3.o)
+__fp_split3                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_split3.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+__fp_splitA                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_split3.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixunssfsi.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixsfdi.o)
+__fp_szero                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_zero.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(divsf3x.o)
+__fp_zero                                         /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fp_zero.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(fixunssfsi.o)
+__heap_end                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__init                                            /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__mulsf3                                          /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3.o)
+                                                  obj/Release/MCAL/TIMER1/TIMER1_program.o
+__mulsf3_pse                                      /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+__mulsf3x                                         /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/libm.a(mulsf3.o)
+__stack                                           /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__udivmodhi4                                      /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_udivmodhi4.o)
+                                                  obj/Release/ECUAL/LCD/LCD_program.o
+                                                  obj/Release/APP/APP_program.o
+__vector_1                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_10                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_11                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_12                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_13                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_14                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_15                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_16                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_17                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_18                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_2                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_3                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_4                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_5                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_6                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_7                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_8                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_9                                        obj/Release/APP/APP_program.o
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vector_default                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+__vectors                                         /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+_exit                                             /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+exit                                              /usr/lib/gcc/avr/5.4.0/avr4/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o
+main                                              obj/Release/main.o
+                                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr4/crtatmega8.o

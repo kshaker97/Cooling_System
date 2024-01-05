@@ -1,0 +1,11 @@
+#ifndef BUTTON_CONFIG_H_INCLUDED
+#define BUTTON_CONFIG_H_INCLUDED
+
+#define BUTTON_PORT DIO_PORTD
+#define BUTTON_0 2
+#define BUTTON_1 3
+
+#define IS_PULLED_UP     1
+#define IS_NOT_PULLED_UP 0
+
+#endif // BUTTON_CONFIG_H_INCLUDED

@@ -1,0 +1,12 @@
+#ifndef TIMER0_CONFIG_H_INCLUDED
+#define TIMER0_CONFIG_H_INCLUDED
+
+#ifndef F_CPU
+#define F_CPU 16000000.0
+#endif // F_CPU
+
+#define PRESCALER (float)64
+#define TIMER_TICK (PRESCALER)/(F_CPU)
+#define MAX_DELAY (TIMER_TICK*256)
+
+#endif // TIMER0_CONFIG_H_INCLUDED

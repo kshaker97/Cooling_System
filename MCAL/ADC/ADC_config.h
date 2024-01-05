@@ -1,0 +1,6 @@
+#ifndef ADC_CONFIG_H_INCLUDED
+#define ADC_CONFIG_H_INCLUDED
+
+
+
+#endif // ADC_CONFIG_H_INCLUDED
