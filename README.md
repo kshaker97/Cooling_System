@@ -1,17 +1,17 @@
 # On_Demand_Traffic_Light_Control_System
 
 ## Description
-Cooling system useds LM35 sensor to measure room temperature. Temperature is displayed on the first line of 16x2 LCD Display and on two digits seven segments. If the temperature exceeds 35 C. A Led lights on, buzzer sounds on and a Dc motor fan operates to lower room temperature below 35 C. Dc motor duty cycle is displayed on the second line of 16x2 LCD Display.
-## System Design
-1. APPLICATION LAYER
+Cooling system uses LM35 sensor to measure room temperature. Temperature is displayed on the first line of 16x2 LCD Display and on two digits seven segments. If the temperature exceeds 35 C. A Led lights on, buzzer sounds on and a Dc motor fan operates to lower room temperature below 35 C. Dc motor duty cycle is displayed on the second line of 16x2 LCD Display.
+## System Layers
+1. APP
 2. ECUAL
    - LED - BUTTON - BUZZER - DC MOTOR - LCD - SEVEN SEGMENT - LM35
 4. MCAL
    - DIO - TIMER0 - TIMER1 - INTERRUPT - ADC
 6. UTILITES
    - STD_TYPES - BIT_MATH
-## Hardware Design
-* LM35 sensor is connected to PINC0 aT PORTC.
+## Hardware Connections
+* LM35 sensor is connected to PINC0 at PORTC.
 * 16x2 Hd44780 LCD is connected to PORTC.
   - (RS : PINC0, EN : PINC2, D4 : PINC3, D5 : PINC4, D6 : PINC5, D7 : PINC7).
 * DC MOTOR is connected to PINB1 at PORTB.
