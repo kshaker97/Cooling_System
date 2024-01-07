@@ -7,11 +7,11 @@
 #include "LCD_config.h"
 #include "LCD_private.h"
 
-void LCD_voidLcdInit(uint8_t Copy_u8LcdPort);
-void LCD_voidLcdSendCommand(uint8_t Copy_u8LcdPort, uint8_t Copy_u8LcdCommand);
-void LCD_voidLcdSendData(uint8_t Copy_u8LcdPort, uint8_t Copy_LcdData);
-void LCD_voidLcdSendString(uint8_t Copy_u8LcdPort, uint8_t Copy_u8LcdLine, uint8_t Copy_u8LcdData[]);
-void LCD_voidLcdSendNumber(uint8_t Copy_u8LcdPort, uint16_t Copy_u8LcdNumber);
+void LCD_voidInit(uint8_t Copy_u8LcdPort);
+void LCD_voidSendCommand(uint8_t Copy_u8LcdPort, uint8_t Copy_u8LcdCommand);
+void LCD_voidSendData(uint8_t Copy_u8LcdPort, uint8_t Copy_LcdData);
+void LCD_voidSendString(uint8_t Copy_u8LcdPort, uint8_t Copy_u8LcdLine, uint8_t Copy_u8LcdData[]);
+void LCD_voidSendNumber(uint8_t Copy_u8LcdPort, uint16_t Copy_u8LcdNumber);
 
 
 

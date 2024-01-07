@@ -90,36 +90,36 @@ Disassembly of section .text:
   60:	84 d2       	rcall	.+1288   	; 0x56a <ADC_voidChannelInit>
   62:	64 e0       	ldi	r22, 0x04	; 4
   64:	82 e4       	ldi	r24, 0x42	; 66
-  66:	68 d2       	rcall	.+1232   	; 0x538 <LED_voidLedInit>
+  66:	68 d2       	rcall	.+1232   	; 0x538 <LED_voidInit>
   68:	65 e0       	ldi	r22, 0x05	; 5
   6a:	82 e4       	ldi	r24, 0x42	; 66
-  6c:	e3 d0       	rcall	.+454    	; 0x234 <BUZZER_voidBuzzerInit>
+  6c:	e3 d0       	rcall	.+454    	; 0x234 <BUZZER_voidInit>
   6e:	83 e4       	ldi	r24, 0x43	; 67
-  70:	70 d1       	rcall	.+736    	; 0x352 <LCD_voidLcdInit>
+  70:	70 d1       	rcall	.+736    	; 0x352 <LCD_voidInit>
   72:	a2 d3       	rcall	.+1860   	; 0x7b8 <INTERRUPT_voidGlobalInterruptEnable>
-  74:	bf d3       	rcall	.+1918   	; 0x7f4 <TIMER0_voidTimerInterruptEnable>
-  76:	bc d3       	rcall	.+1912   	; 0x7f0 <TIMER0_voidTimerInit>
+  74:	bf d3       	rcall	.+1918   	; 0x7f4 <TIMER0_voidInterruptEnable>
+  76:	bc d3       	rcall	.+1912   	; 0x7f0 <TIMER0_voidInit>
   78:	42 e0       	ldi	r20, 0x02	; 2
   7a:	64 e4       	ldi	r22, 0x44	; 68
   7c:	82 e4       	ldi	r24, 0x42	; 66
-  7e:	63 d2       	rcall	.+1222   	; 0x546 <SEVENSEGMENT_voidSevenSegmentInit>
+  7e:	63 d2       	rcall	.+1222   	; 0x546 <SEVENSEGMENT_voidInit>
   80:	43 e0       	ldi	r20, 0x03	; 3
   82:	64 e4       	ldi	r22, 0x44	; 68
   84:	82 e4       	ldi	r24, 0x42	; 66
-  86:	5f d2       	rcall	.+1214   	; 0x546 <SEVENSEGMENT_voidSevenSegmentInit>
+  86:	5f d2       	rcall	.+1214   	; 0x546 <SEVENSEGMENT_voidInit>
   88:	61 e0       	ldi	r22, 0x01	; 1
   8a:	82 e4       	ldi	r24, 0x42	; 66
-  8c:	d9 c0       	rjmp	.+434    	; 0x240 <DCMOTOR_voidDcMotorInit>
+  8c:	d9 c0       	rjmp	.+434    	; 0x240 <DCMOTOR_voidDcInit>
 
 0000008e <APP_voidStart>:
   8e:	cf 93       	push	r28
   90:	df 93       	push	r29
   92:	62 e0       	ldi	r22, 0x02	; 2
   94:	82 e4       	ldi	r24, 0x42	; 66
-  96:	64 d2       	rcall	.+1224   	; 0x560 <SEVENSEGMENT_voidSevenSegmentOn>
+  96:	64 d2       	rcall	.+1224   	; 0x560 <SEVENSEGMENT_voidTurnOn>
   98:	63 e0       	ldi	r22, 0x03	; 3
   9a:	82 e4       	ldi	r24, 0x42	; 66
-  9c:	63 d2       	rcall	.+1222   	; 0x564 <SEVENSEGMENT_voidSevenSegmentOff>
+  9c:	63 d2       	rcall	.+1222   	; 0x564 <SEVENSEGMENT_voidTurnOff>
   9e:	80 91 88 00 	lds	r24, 0x0088	; 0x800088 <Temperature>
   a2:	90 91 89 00 	lds	r25, 0x0089	; 0x800089 <Temperature+0x1>
   a6:	64 e6       	ldi	r22, 0x64	; 100
@@ -130,7 +130,7 @@ Disassembly of section .text:
   b0:	ff 4f       	sbci	r31, 0xFF	; 255
   b2:	60 81       	ld	r22, Z
   b4:	84 e4       	ldi	r24, 0x44	; 68
-  b6:	58 d2       	rcall	.+1200   	; 0x568 <SEVENSEGMENT_voidSevenSegmentDisplay>
+  b6:	58 d2       	rcall	.+1200   	; 0x568 <SEVENSEGMENT_voidDisplay>
   b8:	60 e0       	ldi	r22, 0x00	; 0
   ba:	70 e0       	ldi	r23, 0x00	; 0
   bc:	80 e8       	ldi	r24, 0x80	; 128
@@ -138,10 +138,10 @@ Disassembly of section .text:
   c0:	a3 d3       	rcall	.+1862   	; 0x808 <TIMER0_voidDelayMilliSeconds>
   c2:	62 e0       	ldi	r22, 0x02	; 2
   c4:	82 e4       	ldi	r24, 0x42	; 66
-  c6:	4e d2       	rcall	.+1180   	; 0x564 <SEVENSEGMENT_voidSevenSegmentOff>
+  c6:	4e d2       	rcall	.+1180   	; 0x564 <SEVENSEGMENT_voidTurnOff>
   c8:	63 e0       	ldi	r22, 0x03	; 3
   ca:	82 e4       	ldi	r24, 0x42	; 66
-  cc:	49 d2       	rcall	.+1170   	; 0x560 <SEVENSEGMENT_voidSevenSegmentOn>
+  cc:	49 d2       	rcall	.+1170   	; 0x560 <SEVENSEGMENT_voidTurnOn>
   ce:	80 91 88 00 	lds	r24, 0x0088	; 0x800088 <Temperature>
   d2:	90 91 89 00 	lds	r25, 0x0089	; 0x800089 <Temperature+0x1>
   d6:	ca e0       	ldi	r28, 0x0A	; 10
@@ -156,7 +156,7 @@ Disassembly of section .text:
   e8:	ff 4f       	sbci	r31, 0xFF	; 255
   ea:	60 81       	ld	r22, Z
   ec:	84 e4       	ldi	r24, 0x44	; 68
-  ee:	3c d2       	rcall	.+1144   	; 0x568 <SEVENSEGMENT_voidSevenSegmentDisplay>
+  ee:	3c d2       	rcall	.+1144   	; 0x568 <SEVENSEGMENT_voidDisplay>
   f0:	60 e0       	ldi	r22, 0x00	; 0
   f2:	70 e0       	ldi	r23, 0x00	; 0
   f4:	80 e8       	ldi	r24, 0x80	; 128
@@ -169,10 +169,10 @@ Disassembly of section .text:
  106:	91 40       	sbci	r25, 0x01	; 1
  108:	b8 f0       	brcs	.+46     	; 0x138 <APP_voidStart+0xaa>
  10a:	82 e4       	ldi	r24, 0x42	; 66
- 10c:	17 d2       	rcall	.+1070   	; 0x53c <LED_voidTurnLedOn>
+ 10c:	17 d2       	rcall	.+1070   	; 0x53c <LED_voidTurnOn>
  10e:	65 e0       	ldi	r22, 0x05	; 5
  110:	82 e4       	ldi	r24, 0x42	; 66
- 112:	92 d0       	rcall	.+292    	; 0x238 <BUZZER_voidBuzzerOn>
+ 112:	92 d0       	rcall	.+292    	; 0x238 <BUZZER_voidSoundOn>
  114:	80 91 88 00 	lds	r24, 0x0088	; 0x800088 <Temperature>
  118:	90 91 89 00 	lds	r25, 0x0089	; 0x800089 <Temperature+0x1>
  11c:	8e 3f       	cpi	r24, 0xFE	; 254
@@ -188,17 +188,17 @@ Disassembly of section .text:
  134:	44 0f       	add	r20, r20
  136:	08 c0       	rjmp	.+16     	; 0x148 <APP_voidStart+0xba>
  138:	82 e4       	ldi	r24, 0x42	; 66
- 13a:	02 d2       	rcall	.+1028   	; 0x540 <LED_voidTurnLedOff>
+ 13a:	02 d2       	rcall	.+1028   	; 0x540 <LED_voidTurnOff>
  13c:	65 e0       	ldi	r22, 0x05	; 5
  13e:	82 e4       	ldi	r24, 0x42	; 66
- 140:	7d d0       	rcall	.+250    	; 0x23c <BUZZER_voidBuzzerOff>
+ 140:	7d d0       	rcall	.+250    	; 0x23c <BUZZER_voidSoundOff>
  142:	10 92 8a 00 	sts	0x008A, r1	; 0x80008a <DutyCycle>
  146:	40 e0       	ldi	r20, 0x00	; 0
  148:	61 e0       	ldi	r22, 0x01	; 1
  14a:	82 e4       	ldi	r24, 0x42	; 66
  14c:	df 91       	pop	r29
  14e:	cf 91       	pop	r28
- 150:	80 c0       	rjmp	.+256    	; 0x252 <DCMOTOR_voidSetDcMotorDutyCycle>
+ 150:	80 c0       	rjmp	.+256    	; 0x252 <DCMOTOR_voidSetDutyCycle>
 
 00000152 <__vector_9>:
  152:	1f 92       	push	r1
@@ -225,28 +225,28 @@ Disassembly of section .text:
  180:	f9 f4       	brne	.+62     	; 0x1c0 <__vector_9+0x6e>
  182:	61 e0       	ldi	r22, 0x01	; 1
  184:	83 e4       	ldi	r24, 0x43	; 67
- 186:	88 d0       	rcall	.+272    	; 0x298 <LCD_voidLcdSendCommand>
+ 186:	88 d0       	rcall	.+272    	; 0x298 <LCD_voidSendCommand>
  188:	4a e6       	ldi	r20, 0x6A	; 106
  18a:	50 e0       	ldi	r21, 0x00	; 0
  18c:	60 e8       	ldi	r22, 0x80	; 128
  18e:	83 e4       	ldi	r24, 0x43	; 67
- 190:	7d d1       	rcall	.+762    	; 0x48c <LCD_voidLcdSendString>
+ 190:	7d d1       	rcall	.+762    	; 0x48c <LCD_voidSendString>
  192:	80 91 88 00 	lds	r24, 0x0088	; 0x800088 <Temperature>
  196:	90 91 89 00 	lds	r25, 0x0089	; 0x800089 <Temperature+0x1>
  19a:	6a e0       	ldi	r22, 0x0A	; 10
  19c:	70 e0       	ldi	r23, 0x00	; 0
  19e:	67 d4       	rcall	.+2254   	; 0xa6e <__udivmodhi4>
  1a0:	83 e4       	ldi	r24, 0x43	; 67
- 1a2:	92 d1       	rcall	.+804    	; 0x4c8 <LCD_voidLcdSendNumber>
+ 1a2:	92 d1       	rcall	.+804    	; 0x4c8 <LCD_voidSendNumber>
  1a4:	48 e7       	ldi	r20, 0x78	; 120
  1a6:	50 e0       	ldi	r21, 0x00	; 0
  1a8:	60 ec       	ldi	r22, 0xC0	; 192
  1aa:	83 e4       	ldi	r24, 0x43	; 67
- 1ac:	6f d1       	rcall	.+734    	; 0x48c <LCD_voidLcdSendString>
+ 1ac:	6f d1       	rcall	.+734    	; 0x48c <LCD_voidSendString>
  1ae:	60 91 8a 00 	lds	r22, 0x008A	; 0x80008a <DutyCycle>
  1b2:	70 e0       	ldi	r23, 0x00	; 0
  1b4:	83 e4       	ldi	r24, 0x43	; 67
- 1b6:	88 d1       	rcall	.+784    	; 0x4c8 <LCD_voidLcdSendNumber>
+ 1b6:	88 d1       	rcall	.+784    	; 0x4c8 <LCD_voidSendNumber>
  1b8:	10 92 87 00 	sts	0x0087, r1	; 0x800087 <__data_end+0x1>
  1bc:	10 92 86 00 	sts	0x0086, r1	; 0x800086 <__data_end>
  1c0:	80 e0       	ldi	r24, 0x00	; 0
@@ -255,7 +255,7 @@ Disassembly of section .text:
  1c8:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <Temperature>
  1cc:	61 e0       	ldi	r22, 0x01	; 1
  1ce:	82 e4       	ldi	r24, 0x42	; 66
- 1d0:	4b d0       	rcall	.+150    	; 0x268 <DCMOTOR_u8GetDcMotorDutyCycle>
+ 1d0:	4b d0       	rcall	.+150    	; 0x268 <DCMOTOR_u8GetDutyCycle>
  1d2:	80 93 8a 00 	sts	0x008A, r24	; 0x80008a <DutyCycle>
  1d6:	80 91 86 00 	lds	r24, 0x0086	; 0x800086 <__data_end>
  1da:	90 91 87 00 	lds	r25, 0x0087	; 0x800087 <__data_end+0x1>
@@ -280,7 +280,7 @@ Disassembly of section .text:
  206:	1f 90       	pop	r1
  208:	18 95       	reti
 
-0000020a <BUTTON_voidButtonInit>:
+0000020a <BUTTON_voidInit>:
  20a:	1f 93       	push	r17
  20c:	cf 93       	push	r28
  20e:	df 93       	push	r29
@@ -290,7 +290,7 @@ Disassembly of section .text:
  216:	40 e0       	ldi	r20, 0x00	; 0
  218:	fc d1       	rcall	.+1016   	; 0x612 <DIO_voidSetPinDirection>
  21a:	11 30       	cpi	r17, 0x01	; 1
- 21c:	31 f4       	brne	.+12     	; 0x22a <BUTTON_voidButtonInit+0x20>
+ 21c:	31 f4       	brne	.+12     	; 0x22a <BUTTON_voidInit+0x20>
  21e:	6d 2f       	mov	r22, r29
  220:	8c 2f       	mov	r24, r28
  222:	df 91       	pop	r29
@@ -302,55 +302,55 @@ Disassembly of section .text:
  22e:	1f 91       	pop	r17
  230:	08 95       	ret
 
-00000232 <BUTTON_u8GetButtonState>:
+00000232 <BUTTON_u8GetState>:
  232:	ad c2       	rjmp	.+1370   	; 0x78e <DIO_u8GetPinValue>
 
-00000234 <BUZZER_voidBuzzerInit>:
+00000234 <BUZZER_voidInit>:
  234:	41 e0       	ldi	r20, 0x01	; 1
  236:	ed c1       	rjmp	.+986    	; 0x612 <DIO_voidSetPinDirection>
 
-00000238 <BUZZER_voidBuzzerOn>:
+00000238 <BUZZER_voidSoundOn>:
  238:	41 e0       	ldi	r20, 0x01	; 1
  23a:	38 c2       	rjmp	.+1136   	; 0x6ac <DIO_voidSetPinValue>
 
-0000023c <BUZZER_voidBuzzerOff>:
+0000023c <BUZZER_voidSoundOff>:
  23c:	40 e0       	ldi	r20, 0x00	; 0
  23e:	36 c2       	rjmp	.+1132   	; 0x6ac <DIO_voidSetPinValue>
 
-00000240 <DCMOTOR_voidDcMotorInit>:
+00000240 <DCMOTOR_voidDcInit>:
  240:	82 34       	cpi	r24, 0x42	; 66
- 242:	31 f4       	brne	.+12     	; 0x250 <DCMOTOR_voidDcMotorInit+0x10>
+ 242:	31 f4       	brne	.+12     	; 0x250 <DCMOTOR_voidDcInit+0x10>
  244:	8f ef       	ldi	r24, 0xFF	; 255
  246:	86 0f       	add	r24, r22
  248:	82 30       	cpi	r24, 0x02	; 2
- 24a:	10 f4       	brcc	.+4      	; 0x250 <DCMOTOR_voidDcMotorInit+0x10>
+ 24a:	10 f4       	brcc	.+4      	; 0x250 <DCMOTOR_voidDcInit+0x10>
  24c:	86 2f       	mov	r24, r22
  24e:	ce c3       	rjmp	.+1948   	; 0x9ec <TIMER1_voidPwmInit>
  250:	08 95       	ret
 
-00000252 <DCMOTOR_voidSetDcMotorDutyCycle>:
+00000252 <DCMOTOR_voidSetDutyCycle>:
  252:	96 2f       	mov	r25, r22
  254:	82 34       	cpi	r24, 0x42	; 66
- 256:	39 f4       	brne	.+14     	; 0x266 <DCMOTOR_voidSetDcMotorDutyCycle+0x14>
+ 256:	39 f4       	brne	.+14     	; 0x266 <DCMOTOR_voidSetDutyCycle+0x14>
  258:	8f ef       	ldi	r24, 0xFF	; 255
  25a:	86 0f       	add	r24, r22
  25c:	82 30       	cpi	r24, 0x02	; 2
- 25e:	18 f4       	brcc	.+6      	; 0x266 <DCMOTOR_voidSetDcMotorDutyCycle+0x14>
+ 25e:	18 f4       	brcc	.+6      	; 0x266 <DCMOTOR_voidSetDutyCycle+0x14>
  260:	64 2f       	mov	r22, r20
  262:	89 2f       	mov	r24, r25
  264:	e2 c3       	rjmp	.+1988   	; 0xa2a <TIMER1_voidSetDutyCycle>
  266:	08 95       	ret
 
-00000268 <DCMOTOR_u8GetDcMotorDutyCycle>:
+00000268 <DCMOTOR_u8GetDutyCycle>:
  268:	82 34       	cpi	r24, 0x42	; 66
- 26a:	99 f4       	brne	.+38     	; 0x292 <DCMOTOR_u8GetDcMotorDutyCycle+0x2a>
+ 26a:	99 f4       	brne	.+38     	; 0x292 <DCMOTOR_u8GetDutyCycle+0x2a>
  26c:	61 30       	cpi	r22, 0x01	; 1
- 26e:	29 f0       	breq	.+10     	; 0x27a <DCMOTOR_u8GetDcMotorDutyCycle+0x12>
+ 26e:	29 f0       	breq	.+10     	; 0x27a <DCMOTOR_u8GetDutyCycle+0x12>
  270:	62 30       	cpi	r22, 0x02	; 2
- 272:	79 f4       	brne	.+30     	; 0x292 <DCMOTOR_u8GetDcMotorDutyCycle+0x2a>
+ 272:	79 f4       	brne	.+30     	; 0x292 <DCMOTOR_u8GetDutyCycle+0x2a>
  274:	68 b5       	in	r22, 0x28	; 40
  276:	79 b5       	in	r23, 0x29	; 41
- 278:	02 c0       	rjmp	.+4      	; 0x27e <DCMOTOR_u8GetDcMotorDutyCycle+0x16>
+ 278:	02 c0       	rjmp	.+4      	; 0x27e <DCMOTOR_u8GetDutyCycle+0x16>
  27a:	6a b5       	in	r22, 0x2a	; 42
  27c:	7b b5       	in	r23, 0x2b	; 43
  27e:	80 e0       	ldi	r24, 0x00	; 0
@@ -362,12 +362,12 @@ Disassembly of section .text:
  28a:	51 e4       	ldi	r21, 0x41	; 65
  28c:	19 d4       	rcall	.+2098   	; 0xac0 <__divsf3>
  28e:	ba d4       	rcall	.+2420   	; 0xc04 <__fixunssfsi>
- 290:	01 c0       	rjmp	.+2      	; 0x294 <DCMOTOR_u8GetDcMotorDutyCycle+0x2c>
+ 290:	01 c0       	rjmp	.+2      	; 0x294 <DCMOTOR_u8GetDutyCycle+0x2c>
  292:	60 e0       	ldi	r22, 0x00	; 0
  294:	86 2f       	mov	r24, r22
  296:	08 95       	ret
 
-00000298 <LCD_voidLcdSendCommand>:
+00000298 <LCD_voidSendCommand>:
  298:	cf 93       	push	r28
  29a:	df 93       	push	r29
  29c:	c8 2f       	mov	r28, r24
@@ -462,7 +462,7 @@ Disassembly of section .text:
  34e:	cf 91       	pop	r28
  350:	5b c2       	rjmp	.+1206   	; 0x808 <TIMER0_voidDelayMilliSeconds>
 
-00000352 <LCD_voidLcdInit>:
+00000352 <LCD_voidInit>:
  352:	cf 93       	push	r28
  354:	c8 2f       	mov	r28, r24
  356:	41 e0       	ldi	r20, 0x01	; 1
@@ -495,7 +495,7 @@ Disassembly of section .text:
  38c:	3d d2       	rcall	.+1146   	; 0x808 <TIMER0_voidDelayMilliSeconds>
  38e:	63 e0       	ldi	r22, 0x03	; 3
  390:	8c 2f       	mov	r24, r28
- 392:	82 df       	rcall	.-252    	; 0x298 <LCD_voidLcdSendCommand>
+ 392:	82 df       	rcall	.-252    	; 0x298 <LCD_voidSendCommand>
  394:	60 e0       	ldi	r22, 0x00	; 0
  396:	70 e0       	ldi	r23, 0x00	; 0
  398:	8c e1       	ldi	r24, 0x1C	; 28
@@ -503,10 +503,10 @@ Disassembly of section .text:
  39c:	ae d2       	rcall	.+1372   	; 0x8fa <TIMER0_voidDelayMicroSeconds>
  39e:	62 e0       	ldi	r22, 0x02	; 2
  3a0:	8c 2f       	mov	r24, r28
- 3a2:	7a df       	rcall	.-268    	; 0x298 <LCD_voidLcdSendCommand>
+ 3a2:	7a df       	rcall	.-268    	; 0x298 <LCD_voidSendCommand>
  3a4:	68 e2       	ldi	r22, 0x28	; 40
  3a6:	8c 2f       	mov	r24, r28
- 3a8:	77 df       	rcall	.-274    	; 0x298 <LCD_voidLcdSendCommand>
+ 3a8:	77 df       	rcall	.-274    	; 0x298 <LCD_voidSendCommand>
  3aa:	60 e0       	ldi	r22, 0x00	; 0
  3ac:	70 e0       	ldi	r23, 0x00	; 0
  3ae:	84 e1       	ldi	r24, 0x14	; 20
@@ -514,13 +514,13 @@ Disassembly of section .text:
  3b2:	a3 d2       	rcall	.+1350   	; 0x8fa <TIMER0_voidDelayMicroSeconds>
  3b4:	61 e0       	ldi	r22, 0x01	; 1
  3b6:	8c 2f       	mov	r24, r28
- 3b8:	6f df       	rcall	.-290    	; 0x298 <LCD_voidLcdSendCommand>
+ 3b8:	6f df       	rcall	.-290    	; 0x298 <LCD_voidSendCommand>
  3ba:	66 e0       	ldi	r22, 0x06	; 6
  3bc:	8c 2f       	mov	r24, r28
- 3be:	6c df       	rcall	.-296    	; 0x298 <LCD_voidLcdSendCommand>
+ 3be:	6c df       	rcall	.-296    	; 0x298 <LCD_voidSendCommand>
  3c0:	6c e0       	ldi	r22, 0x0C	; 12
  3c2:	8c 2f       	mov	r24, r28
- 3c4:	69 df       	rcall	.-302    	; 0x298 <LCD_voidLcdSendCommand>
+ 3c4:	69 df       	rcall	.-302    	; 0x298 <LCD_voidSendCommand>
  3c6:	6a e0       	ldi	r22, 0x0A	; 10
  3c8:	77 ed       	ldi	r23, 0xD7	; 215
  3ca:	83 ec       	ldi	r24, 0xC3	; 195
@@ -528,7 +528,7 @@ Disassembly of section .text:
  3ce:	cf 91       	pop	r28
  3d0:	1b c2       	rjmp	.+1078   	; 0x808 <TIMER0_voidDelayMilliSeconds>
 
-000003d2 <LCD_voidLcdSendData>:
+000003d2 <LCD_voidSendData>:
  3d2:	cf 93       	push	r28
  3d4:	df 93       	push	r29
  3d6:	c8 2f       	mov	r28, r24
@@ -623,7 +623,7 @@ Disassembly of section .text:
  488:	cf 91       	pop	r28
  48a:	be c1       	rjmp	.+892    	; 0x808 <TIMER0_voidDelayMilliSeconds>
 
-0000048c <LCD_voidLcdSendString>:
+0000048c <LCD_voidSendString>:
  48c:	0f 93       	push	r16
  48e:	1f 93       	push	r17
  490:	cf 93       	push	r28
@@ -631,37 +631,37 @@ Disassembly of section .text:
  494:	d8 2f       	mov	r29, r24
  496:	8a 01       	movw	r16, r20
  498:	60 38       	cpi	r22, 0x80	; 128
- 49a:	21 f4       	brne	.+8      	; 0x4a4 <LCD_voidLcdSendString+0x18>
+ 49a:	21 f4       	brne	.+8      	; 0x4a4 <LCD_voidSendString+0x18>
  49c:	8d 2f       	mov	r24, r29
- 49e:	fc de       	rcall	.-520    	; 0x298 <LCD_voidLcdSendCommand>
+ 49e:	fc de       	rcall	.-520    	; 0x298 <LCD_voidSendCommand>
  4a0:	c0 e0       	ldi	r28, 0x00	; 0
- 4a2:	03 c0       	rjmp	.+6      	; 0x4aa <LCD_voidLcdSendString+0x1e>
+ 4a2:	03 c0       	rjmp	.+6      	; 0x4aa <LCD_voidSendString+0x1e>
  4a4:	60 3c       	cpi	r22, 0xC0	; 192
- 4a6:	e1 f7       	brne	.-8      	; 0x4a0 <LCD_voidLcdSendString+0x14>
- 4a8:	f9 cf       	rjmp	.-14     	; 0x49c <LCD_voidLcdSendString+0x10>
+ 4a6:	e1 f7       	brne	.-8      	; 0x4a0 <LCD_voidSendString+0x14>
+ 4a8:	f9 cf       	rjmp	.-14     	; 0x49c <LCD_voidSendString+0x10>
  4aa:	f8 01       	movw	r30, r16
  4ac:	ec 0f       	add	r30, r28
  4ae:	f1 1d       	adc	r31, r1
  4b0:	60 81       	ld	r22, Z
  4b2:	66 23       	and	r22, r22
- 4b4:	21 f0       	breq	.+8      	; 0x4be <LCD_voidLcdSendString+0x32>
+ 4b4:	21 f0       	breq	.+8      	; 0x4be <LCD_voidSendString+0x32>
  4b6:	8d 2f       	mov	r24, r29
- 4b8:	8c df       	rcall	.-232    	; 0x3d2 <LCD_voidLcdSendData>
+ 4b8:	8c df       	rcall	.-232    	; 0x3d2 <LCD_voidSendData>
  4ba:	cf 5f       	subi	r28, 0xFF	; 255
- 4bc:	f6 cf       	rjmp	.-20     	; 0x4aa <LCD_voidLcdSendString+0x1e>
+ 4bc:	f6 cf       	rjmp	.-20     	; 0x4aa <LCD_voidSendString+0x1e>
  4be:	df 91       	pop	r29
  4c0:	cf 91       	pop	r28
  4c2:	1f 91       	pop	r17
  4c4:	0f 91       	pop	r16
  4c6:	08 95       	ret
 
-000004c8 <LCD_voidLcdSendNumber>:
+000004c8 <LCD_voidSendNumber>:
  4c8:	0f 93       	push	r16
  4ca:	1f 93       	push	r17
  4cc:	cf 93       	push	r28
  4ce:	df 93       	push	r29
- 4d0:	00 d0       	rcall	.+0      	; 0x4d2 <LCD_voidLcdSendNumber+0xa>
- 4d2:	00 d0       	rcall	.+0      	; 0x4d4 <LCD_voidLcdSendNumber+0xc>
+ 4d0:	00 d0       	rcall	.+0      	; 0x4d2 <LCD_voidSendNumber+0xa>
+ 4d2:	00 d0       	rcall	.+0      	; 0x4d4 <LCD_voidSendNumber+0xc>
  4d4:	1f 92       	push	r1
  4d6:	cd b7       	in	r28, 0x3d	; 61
  4d8:	de b7       	in	r29, 0x3e	; 62
@@ -671,7 +671,7 @@ Disassembly of section .text:
  4e0:	2a e0       	ldi	r18, 0x0A	; 10
  4e2:	30 e0       	ldi	r19, 0x00	; 0
  4e4:	00 97       	sbiw	r24, 0x00	; 0
- 4e6:	79 f0       	breq	.+30     	; 0x506 <LCD_voidLcdSendNumber+0x3e>
+ 4e6:	79 f0       	breq	.+30     	; 0x506 <LCD_voidSendNumber+0x3e>
  4e8:	e1 e0       	ldi	r30, 0x01	; 1
  4ea:	f0 e0       	ldi	r31, 0x00	; 0
  4ec:	ec 0f       	add	r30, r28
@@ -686,10 +686,10 @@ Disassembly of section .text:
  4fe:	80 83       	st	Z, r24
  500:	cb 01       	movw	r24, r22
  502:	1f 5f       	subi	r17, 0xFF	; 255
- 504:	ef cf       	rjmp	.-34     	; 0x4e4 <LCD_voidLcdSendNumber+0x1c>
+ 504:	ef cf       	rjmp	.-34     	; 0x4e4 <LCD_voidSendNumber+0x1c>
  506:	11 50       	subi	r17, 0x01	; 1
  508:	17 fd       	sbrc	r17, 7
- 50a:	0c c0       	rjmp	.+24     	; 0x524 <LCD_voidLcdSendNumber+0x5c>
+ 50a:	0c c0       	rjmp	.+24     	; 0x524 <LCD_voidSendNumber+0x5c>
  50c:	e1 e0       	ldi	r30, 0x01	; 1
  50e:	f0 e0       	ldi	r31, 0x00	; 0
  510:	ec 0f       	add	r30, r28
@@ -700,8 +700,8 @@ Disassembly of section .text:
  51a:	fa 95       	dec	r31
  51c:	60 81       	ld	r22, Z
  51e:	80 2f       	mov	r24, r16
- 520:	58 df       	rcall	.-336    	; 0x3d2 <LCD_voidLcdSendData>
- 522:	f1 cf       	rjmp	.-30     	; 0x506 <LCD_voidLcdSendNumber+0x3e>
+ 520:	58 df       	rcall	.-336    	; 0x3d2 <LCD_voidSendData>
+ 522:	f1 cf       	rjmp	.-30     	; 0x506 <LCD_voidSendNumber+0x3e>
  524:	0f 90       	pop	r0
  526:	0f 90       	pop	r0
  528:	0f 90       	pop	r0
@@ -713,22 +713,22 @@ Disassembly of section .text:
  534:	0f 91       	pop	r16
  536:	08 95       	ret
 
-00000538 <LED_voidLedInit>:
+00000538 <LED_voidInit>:
  538:	41 e0       	ldi	r20, 0x01	; 1
  53a:	6b c0       	rjmp	.+214    	; 0x612 <DIO_voidSetPinDirection>
 
-0000053c <LED_voidTurnLedOn>:
+0000053c <LED_voidTurnOn>:
  53c:	41 e0       	ldi	r20, 0x01	; 1
  53e:	b6 c0       	rjmp	.+364    	; 0x6ac <DIO_voidSetPinValue>
 
-00000540 <LED_voidTurnLedOff>:
+00000540 <LED_voidTurnOff>:
  540:	40 e0       	ldi	r20, 0x00	; 0
  542:	b4 c0       	rjmp	.+360    	; 0x6ac <DIO_voidSetPinValue>
 
-00000544 <LED_voidToggleLed>:
+00000544 <LED_voidToggle>:
  544:	00 c1       	rjmp	.+512    	; 0x746 <DIO_voidTogglePinValue>
 
-00000546 <SEVENSEGMENT_voidSevenSegmentInit>:
+00000546 <SEVENSEGMENT_voidInit>:
  546:	cf 93       	push	r28
  548:	df 93       	push	r29
  54a:	c8 2f       	mov	r28, r24
@@ -743,15 +743,15 @@ Disassembly of section .text:
  55c:	cf 91       	pop	r28
  55e:	59 c0       	rjmp	.+178    	; 0x612 <DIO_voidSetPinDirection>
 
-00000560 <SEVENSEGMENT_voidSevenSegmentOn>:
+00000560 <SEVENSEGMENT_voidTurnOn>:
  560:	40 e0       	ldi	r20, 0x00	; 0
  562:	a4 c0       	rjmp	.+328    	; 0x6ac <DIO_voidSetPinValue>
 
-00000564 <SEVENSEGMENT_voidSevenSegmentOff>:
+00000564 <SEVENSEGMENT_voidTurnOff>:
  564:	41 e0       	ldi	r20, 0x01	; 1
  566:	a2 c0       	rjmp	.+324    	; 0x6ac <DIO_voidSetPinValue>
 
-00000568 <SEVENSEGMENT_voidSevenSegmentDisplay>:
+00000568 <SEVENSEGMENT_voidDisplay>:
  568:	28 c0       	rjmp	.+80     	; 0x5ba <DIO_voidSetPortValue>
 
 0000056a <ADC_voidChannelInit>:
@@ -1103,11 +1103,11 @@ Disassembly of section .text:
  7ec:	85 bf       	out	0x35, r24	; 53
  7ee:	08 95       	ret
 
-000007f0 <TIMER0_voidTimerInit>:
+000007f0 <TIMER0_voidInit>:
  7f0:	13 be       	out	0x33, r1	; 51
  7f2:	08 95       	ret
 
-000007f4 <TIMER0_voidTimerInterruptEnable>:
+000007f4 <TIMER0_voidInterruptEnable>:
  7f4:	89 b7       	in	r24, 0x39	; 57
  7f6:	81 60       	ori	r24, 0x01	; 1
  7f8:	89 bf       	out	0x39, r24	; 57

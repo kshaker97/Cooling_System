@@ -7,8 +7,8 @@
 #include "TIMER0_private.h"
 #include "TIMER0_config.h"
 
-void TIMER0_voidTimerInit(void);
-void TIMER0_voidTimerInterruptEnable(void);
+void TIMER0_voidInit(void);
+void TIMER0_voidInterruptEnable(void);
 void TIMER0_voidDelayMilliSeconds(float64_t Copy_f64Delay_ms);
 void TIMER0_voidDelayMicroSeconds(float64_t Copy_f64Delay_us);
 

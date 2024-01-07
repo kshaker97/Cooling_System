@@ -1,9 +1,9 @@
 #include "TIMER0_interface.h"
 
-void TIMER0_voidTimerInit(void){
+void TIMER0_voidInit(void){
     TCCR0 = 0x00;
 }
-void TIMER0_voidTimerInterruptEnable(void){
+void TIMER0_voidInterruptEnable(void){
     SETBIT(TIMSK, TOIE0);
     SETBIT(TCCR0, CS00); SETBIT(TCCR0, CS01);
 }
