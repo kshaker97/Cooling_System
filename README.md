@@ -20,7 +20,7 @@ This document outlines the design specifications for a room cooling system utili
 | DEVICE    |     |      |     |     |     |     |     |     |     |     |     |
 | ------- | ------------ | ------- | ------- |------- |------- |------- |------- |------- |------- |------- |------- |
 |   LM35 SENSOR  | +Ve    | Vout     | -Ve    | -    | -    | -    | -    | -    | -    | -    | -    |
-|   PIN  | Vcc    | PC0     | GND    | -    | -    | -    | -    | PC3    | PC4    | PC5    | PC6    |
+|   PIN  | Vcc    | PC0     | GND    | -    | -    | -    | -    | -    | -    | -    | -    |
 |   16x2 LCD  | RS    | RW     | EN    | D0    | D1    | D2    | D3    | D4    | D5    | D6    | D7    |
 |   PIN  | PC1    | GND     | PC2    | -    | -    | -    | -    | PC3    | PC4    | PC5    | PC6    |
 |   DC-MOTOR  | +ve    | -ve     | -    | -    | -    | -    | -    | -    | -    | -    | -    |
