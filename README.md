@@ -1,23 +1,44 @@
-# Cooling System Using ATmega8
+<h1 align="center">
+  Cooling System Using ATmega8
+</h1>
 
-## Description
-Cooling system uses LM35 sensor to measure room temperature. Temperature is displayed on the first line of 16x2 LCD Display and on two digits seven segments. If the temperature exceeds 35 C. A Led lights on, buzzer sounds on and a Dc motor fan operates to lower room temperature below 35 C. Dc motor duty cycle is displayed on the second line of 16x2 LCD Display.
-## System Layers
-1. APP
-2. ECUAL
-   - LED - BUTTON - BUZZER - DC MOTOR - LCD - SEVEN SEGMENT - LM35
-4. MCAL
-   - DIO - TIMER0 - TIMER1 - INTERRUPT - ADC
-6. UTILITES
-   - STD_TYPES - BIT_MATH
-## Hardware Connections
-* LM35 sensor is connected to PINC0 at PORTC.
-* 16x2 Hd44780 LCD is connected to PORTC.
-  - (RS : PINC0, EN : PINC2, D4 : PINC3, D5 : PINC4, D6 : PINC5, D7 : PINC7).
-* DC MOTOR is connected to PINB1 at PORTB.
-* LED is connected to PINB4 at PORTB.
-* BUZZER is connected to PINB5 at PORTB.
-* SEVEN SEGMENT is connected to PORTD and PORTB.
-  - (a : PIND0, b : PIND1, c : PIND2, d : PIND3, e : PIND4, f : PIND5, g : PIND6, . : PIND7, EN0 : PINB2, EN1 : PINB3). 
+<h4 align="center">A cooling system has been developed, designed to activate a fan and regulate its speed in direct response to
+temperature variations, utilizing an ATmega8 microcontroller for control.</h4>
+
+## Table of Contents:
+- [Introduction](-description)
+- [Explanation](-explanation)
+- [System Layers](-system-layers)
+- [Hardware Connections](-hardware-connections)
+- [Schematic](-schematic)
+
+## Introduction:
+This document outlines the design specifications for a room cooling system utilizing an ATmega8 microcontroller. The system aims to regulate room temperature by measuring it with an LM35 sensor, displaying it on a 16x2 LCD display and two digits seven-segment display, activating a LED indicator, a buzzer, and a DC motor fan if the temperature exceeds 35°C. The duty cycle of the DC motor fan is also displayed on the LCD.
+## System Layers:
+
+![Untitled Diagram drawio(2)](https://github.com/kshaker97/cooling-system-atmega8/assets/145481109/86780b59-ac5d-4052-9525-2c8efc85877d)
+                
+## Hardware Connections:
+
+| DEVICE    |     |      |     |     |     |     |     |     |     |     |     |
+| ------- | ------------ | ------- | ------- |------- |------- |------- |------- |------- |------- |------- |------- |
+|   LM35 SENSOR  | +Ve    | Vout     | -Ve    | -    | -    | -    | -    | -    | -    | -    | -    |
+|   PIN  | Vcc    | PC0     | GND    | -    | -    | -    | -    | PC3    | PC4    | PC5    | PC6    |
+|   16x2 LCD  | RS    | RW     | EN    | D0    | D1    | D2    | D3    | D4    | D5    | D6    | D7    |
+|   PIN  | PC1    | GND     | PC2    | -    | -    | -    | -    | PC3    | PC4    | PC5    | PC6    |
+|   DC-MOTOR  | +ve    | -ve     | -    | -    | -    | -    | -    | -    | -    | -    | -    |
+|   PIN  | PB1    | GND     | -    | -    | -    | -    | -    | -    | -    | -    | -    |
+|   LED  | +ve    | -ve     | -    | -    | -    | -    | -    | -    | -    | -    | -    |
+|   PIN  | PB4    | GND     | -    | -    | -    | -    | -    | -    | -    | -    | -    |
+|   BUZZER  | +ve    | -ve     | -    | -    | -    | -    | -    | -    | -    | -    | -    |
+|   PIN  | PB5    | GND     | -    | -    | -    | -    | -    | -    | -    | -    | -    |
+|   7SEGEMENT  | a    | b     | c    | d    | e    | f    | g    | .    | EN0    | EN1    | -    |
+|   PIN  | PD0    | PD1     | PD2    | PD3    | PD4    | PD5    | PD6    | PD7    | PB2    | PB3    | -    |
+
+
+
+
+
+
 ## Schematic
 ![11(LCD)](https://github.com/kshaker97/Cooling_System/assets/145481109/89372a8f-ccb1-4e07-a90e-e69f77ced972)
