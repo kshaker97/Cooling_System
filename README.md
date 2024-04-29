@@ -6,8 +6,7 @@
 temperature variations, utilizing an ATmega8 microcontroller for control.</h4>
 
 ## Table of Contents:
-- [Introduction](-description)
-- [Explanation](-explanation)
+- [Introduction](-introduction)
 - [System Layers](-system-layers)
 - [Hardware Connections](-hardware-connections)
 - [Schematic](-schematic)
@@ -15,9 +14,7 @@ temperature variations, utilizing an ATmega8 microcontroller for control.</h4>
 ## Introduction:
 This document outlines the design specifications for a room cooling system utilizing an ATmega8 microcontroller. The system aims to regulate room temperature by measuring it with an LM35 sensor, displaying it on a 16x2 LCD display and two digits seven-segment display, activating a LED indicator, a buzzer, and a DC motor fan if the temperature exceeds 35°C. The duty cycle of the DC motor fan is also displayed on the LCD.
 ## System Layers:
-
 ![Untitled Diagram drawio(2)](https://github.com/kshaker97/cooling-system-atmega8/assets/145481109/86780b59-ac5d-4052-9525-2c8efc85877d)
-                
 ## Hardware Connections:
 
 | DEVICE    |     |      |     |     |     |     |     |     |     |     |     |
